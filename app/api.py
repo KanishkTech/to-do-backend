@@ -1,5 +1,5 @@
 # app/api.py
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from app.database import collection
