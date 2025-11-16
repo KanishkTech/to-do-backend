@@ -19,10 +19,13 @@ def todo_helper(todo) -> dict:
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173",
-    "localhost:5173",
-    "https://todo-app-frontend.vercel.app"  
+    # "http://localhost:5173",
+    # "localhost:5173",
+    # "https://todo-app-frontend.vercel.app" 
+    "*" 
 ]
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
