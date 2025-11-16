@@ -21,7 +21,7 @@ app = FastAPI()
 origins = [
     "http://localhost:5173",
     "localhost:5173",
-    "https://todo-app-frontend.vercel.app"
+    "httpsS://todo-app-frontend.vercel.app"
 ]
 app.add_middleware(
     CORSMiddleware,
